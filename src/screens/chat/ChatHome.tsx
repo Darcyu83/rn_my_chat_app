@@ -1,6 +1,6 @@
 import { View, Text, SafeAreaView, ActivityIndicator } from 'react-native';
-import React, { useRef, useState } from 'react';
-import { useNavigation } from '@react-navigation/native';
+import React, { useEffect, useRef, useState } from 'react';
+import { useNavigation, useNavigationState } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamsList } from '../../../App';
 import NavMenu from '../../components/NavMenu';
@@ -8,7 +8,23 @@ import NavMenu from '../../components/NavMenu';
 const ChatHome = () => {
     const navigation = useNavigation<NativeStackNavigationProp<RootStackParamsList>>();
 
+    const navState = useNavigationState((state) => state);
+
+    useEffect(() => {
+        console.log(
+            'navState === ',
+            navState.routes.map((route) => route.name),
+        );
+    }, [navState]);
+
     const [isLoading, setIsLoading] = useState(false);
+
+    useEffect(() => {
+        console.log('ChatHome created');
+        return () => {
+            console.log('ChatHome destoryed');
+        };
+    }, []);
 
     const promiseFunc = (num: number) => {
         return new Promise((resolve, reject) => {
