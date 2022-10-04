@@ -20,11 +20,7 @@ const ChatRoom = () => {
         };
     }, []);
 
-    return (
-        <View>
-            <NavMenu />
-        </View>
-    );
+    return <View></View>;
 };
 
 export default ChatRoom;

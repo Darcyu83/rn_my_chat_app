@@ -20,11 +20,7 @@ const PhoneAuthScrn = () => {
         };
     }, []);
 
-    return (
-        <View>
-            <NavMenu />
-        </View>
-    );
+    return <View></View>;
 };
 
 export default PhoneAuthScrn;

@@ -20,11 +20,7 @@ const ChatList = () => {
         };
     }, []);
 
-    return (
-        <View>
-            <NavMenu />
-        </View>
-    );
+    return <View></View>;
 };
 
 export default ChatList;

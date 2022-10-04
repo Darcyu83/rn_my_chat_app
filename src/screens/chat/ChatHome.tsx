@@ -64,7 +64,6 @@ const ChatHome = () => {
                 Check state changed
             </Text>
             {isLoading && <ActivityIndicator size={'large'} />}
-            <NavMenu />
         </SafeAreaView>
     );
 };

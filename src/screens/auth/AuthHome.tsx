@@ -21,11 +21,7 @@ function AuthHome({}) {
         };
     }, []);
 
-    return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: 'dodgerblue' }}>
-            <NavMenu />
-        </SafeAreaView>
-    );
+    return <SafeAreaView style={{ flex: 1, backgroundColor: 'dodgerblue' }}></SafeAreaView>;
 }
 
 export default AuthHome;

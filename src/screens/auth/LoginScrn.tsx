@@ -24,7 +24,6 @@ const LoginScrn = () => {
         <View>
             <Text>LoginScrn</Text>
             <Text>navState: {navState.routes.map((route) => route.name).toString()}</Text>
-            <NavMenu />
         </View>
     );
 };
