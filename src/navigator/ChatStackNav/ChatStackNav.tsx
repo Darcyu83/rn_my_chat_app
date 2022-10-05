@@ -4,9 +4,9 @@ import React from 'react';
 import ChatHome from '../../screens/chat/ChatHome';
 import ChatList from '../../screens/chat/ChatList';
 import ChatRoom from '../../screens/chat/ChatRoom';
-import { ChatStackParams } from './types';
+import { TChatStackParams } from './types';
 
-const ChatStack = createNativeStackNavigator<ChatStackParams>();
+const ChatStack = createNativeStackNavigator<TChatStackParams>();
 
 export const ChatStackNav = () => {
     return (

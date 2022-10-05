@@ -1,9 +1,10 @@
-import { AuthStackParams } from './AuthStackNav/types';
-import { ChatStackParams } from './ChatStackNav/types';
-import { UserStackParams } from './UserStackNav/types';
+import { TAuthStackParams } from './authStackNav/types';
+import { TChatStackParams } from './chatStackNav/types';
+import { TUserStackParams } from './userStackNav/types';
 
 export type RootBottomParamsList = {
-    ChatStackNav: ChatStackParams;
-    AuthStackNav: AuthStackParams;
-    UserStackNav: UserStackParams;
+    TodosStackNav: JSX.Element;
+    ChatStackNav: TChatStackParams;
+    AuthStackNav: TAuthStackParams;
+    UserStackNav: TUserStackParams;
 };

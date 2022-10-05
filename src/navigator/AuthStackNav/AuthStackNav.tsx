@@ -3,9 +3,9 @@ import React from 'react';
 import AuthHome from '../../screens/auth/AuthHome';
 import LoginScrn from '../../screens/auth/LoginScrn';
 import PhoneAuthScrn from '../../screens/auth/PhoneAuthScrn';
-import { AuthStackParams } from './types';
+import { TAuthStackParams } from './types';
 
-const AuthStack = createNativeStackNavigator<AuthStackParams>();
+const AuthStack = createNativeStackNavigator<TAuthStackParams>();
 export const AuthStackNav = () => {
     return (
         <AuthStack.Navigator>

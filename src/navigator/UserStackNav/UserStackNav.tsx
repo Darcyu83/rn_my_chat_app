@@ -2,9 +2,9 @@ import React from 'react';
 import MyProfile from '../../screens/user/profile/MyProfile';
 import FriendProfile from '../../screens/user/profile/FriendProfile';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { UserStackParams } from './types';
+import { TUserStackParams } from './types';
 
-const UserStack = createNativeStackNavigator<UserStackParams>();
+const UserStack = createNativeStackNavigator<TUserStackParams>();
 
 export const UserStackNav = () => {
     return (
